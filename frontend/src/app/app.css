@@ -16,14 +16,6 @@
   @apply flex items-center gap-6;
 }
 
-.nav-links {
-  @apply flex gap-4 font-medium;
-}
-
-.nav-links a {
-  @apply hover:text-primary-hover transition-colors;
-}
-
 .theme-toggle {
   @apply p-2 rounded-full bg-button hover:bg-button-hover text-icon transition-colors hover:text-primary;
 }
@@ -34,4 +26,31 @@
 
 .welcome-text {
   @apply text-lg;
+}
+
+.nav-links a {
+  @apply px-3 py-2 rounded-md transition-all opacity-70;
+}
+
+.nav-links a.active {
+  @apply opacity-100 bg-primary/10 text-primary font-bold ring-1 ring-primary/30;
+}
+
+.layout-grid {
+  /* Mobile : une seule colonne */
+  @apply grid grid-cols-1 gap-8 p-6 max-w-7xl mx-auto items-start;
+
+  /* Desktop : Deux colonnes (1/4 pour l'encart, 3/4 pour la page) */
+  @screen md {
+    @apply grid-cols-[300px_1fr];
+  }
+}
+
+.sidebar {
+  /* On le garde visible même au scroll sur desktop */
+  @apply sticky top-24;
+}
+
+.page-content {
+  @apply min-h-[60vh];
 }

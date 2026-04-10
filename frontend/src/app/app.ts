@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ProfileCard } from './components/profile-card/profile-card';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router'; // AJOUT ICI
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, ProfileCard],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
