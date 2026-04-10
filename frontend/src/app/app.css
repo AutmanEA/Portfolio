@@ -1,0 +1,37 @@
+@reference "../styles.css";
+
+.app-container {
+  @apply min-h-screen bg-background text-foreground transition-colors duration-300;
+}
+
+.site-header {
+  @apply flex items-center justify-between p-6 shadow-md bg-surface transition-colors duration-300;
+}
+
+.site-title {
+  @apply text-2xl font-bold tracking-tight text-primary transition-colors;
+}
+
+.site-nav {
+  @apply flex items-center gap-6;
+}
+
+.nav-links {
+  @apply flex gap-4 font-medium;
+}
+
+.nav-links a {
+  @apply hover:text-primary-hover transition-colors;
+}
+
+.theme-toggle {
+  @apply p-2 rounded-full bg-button hover:bg-button-hover text-icon transition-colors hover:text-primary;
+}
+
+.main-content {
+  @apply p-8;
+}
+
+.welcome-text {
+  @apply text-lg;
+}

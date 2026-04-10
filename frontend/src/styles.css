@@ -1,3 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
 
-@import 'tailwindcss';
+@theme {
+  --color-background: var(--theme-bg);
+  --color-foreground: var(--theme-text);
+  --color-surface: var(--theme-surface);
+  --color-primary: var(--theme-primary);
+  --color-primary-hover: var(--theme-primary-hover);
+  --color-button: var(--theme-button-bg);
+  --color-button-hover: var(--theme-button-hover);
+  --color-icon: var(--theme-icon);
+}
+
+:root {
+  --theme-bg: var(--color-slate-50);
+  --theme-text: var(--color-slate-900);
+  --theme-surface: var(--color-white);
+  --theme-primary: var(--color-indigo-600);
+  --theme-primary-hover: var(--color-indigo-500);
+  --theme-button-bg: var(--color-slate-200);
+  --theme-button-hover: var(--color-slate-300);
+  --theme-icon: var(--color-amber-500);
+}
+
+.dark {
+  --theme-bg: var(--color-slate-900);
+  --theme-text: var(--color-slate-50);
+  --theme-surface: var(--color-slate-800);
+  --theme-primary: var(--color-indigo-400);
+  --theme-primary-hover: var(--color-indigo-300);
+  --theme-button-bg: var(--color-slate-700);
+  --theme-button-hover: var(--color-slate-600);
+  --theme-icon: var(--color-indigo-400);
+}
